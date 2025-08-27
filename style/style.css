@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+    max-width: 1800px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* Estilos do Cabeçalho e Navegação */
+header {
+    display: flex;
+    justify-content: center; /* Centraliza a navegação */
+    max-width: 1800px;
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transform: scale(1.1);
+    margin: 0 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    transition: 0.3s;
+}
+
+.links-nav:hover {
+    background: linear-gradient(90deg, rgba(3, 83, 189, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Estilos do Menu Hambúrguer (invisível no desktop) */
+#menu-hamburguer {
+    display: flex; /* Escondido por padrão no desktop */
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px; /* Adiciona um espaço da direita */
+}
+
+.barrinhas {
+    width: 45px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.589);
+    margin: 3px;
+}
+
+/* Estilos da Seção Principal */
+#nomes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+}
+
+#nome {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 190px;
+    position: relative;
+    left: 40px;
+}
+
+#sobrenome {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 220px;
+    position: relative;
+    left: 90px;
+    top: -80px;
+}
+
+#foto-perfil {
+    position: relative;
+    top: -400px;
+    left: 1300px;
+    width: 400px;
+    border-radius: 200px;
+    border: 8px solid white;
+    box-shadow: 0 0 20px rgb(3, 83, 189);
+}
