@@ -87,6 +87,10 @@ nav {
     left: 40px;
 }
 
+#apresentacao {
+    height: 750px;
+}
+
 #sobrenome {
     font-family: "Inter", sans-serif;
     font-weight: 900;
@@ -105,4 +109,15 @@ nav {
     border-radius: 200px;
     border: 8px solid white;
     box-shadow: 0 0 20px rgb(3, 83, 189);
+}
+
+/* Parte dos projetos */
+
+#projetos {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
