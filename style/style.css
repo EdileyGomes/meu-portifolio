@@ -131,7 +131,7 @@ footer {
     font-weight: 100;
     font-size: 18px;
     color: white;
-    height: 40vh;
+    height: 50vh;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
@@ -141,6 +141,16 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: start;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    width: 15vw;
+}
+
+#links-uteis:hover, #redes-sociais:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
 }
 
 #links-uteis a {
@@ -151,11 +161,24 @@ footer {
     font-family: 'Inter', sans-serif;
 }
 
+#links-uteis a:hover, #redes-sociais a:hover {
+    background: linear-gradient(90deg, rgba(3, 83, 189, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #redes-sociais {
     display: flex;
     flex-direction: column;
     text-align: start;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    width: 12vw;
 }
+
+
 #redes-sociais a {
     text-decoration: none;
     color: black;
@@ -167,7 +190,7 @@ footer {
 #direitos-autorais {
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: right;
 }
 #direitos-autorais p {
     text-decoration: none;
