@@ -113,11 +113,68 @@ nav {
 
 /* Parte dos projetos */
 
-#projetos {
+.letreiros {
     font-family: "Inter", sans-serif;
     font-weight: 100;
     font-size: 50px;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+}
+
+/* Parte do footer */
+footer {
+    background-color: white ;
+    text-align: center;
+    padding: 60px;
+    border-radius: 50px;
+    font-weight: 100;
+    font-size: 18px;
+    color: white;
+    height: 40vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#links-uteis {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#links-uteis a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#redes-sociais a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+#direitos-autorais {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#direitos-autorais p {
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
 }
