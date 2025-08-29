@@ -144,7 +144,7 @@ footer {
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
     padding: 15px;
-    width: 15vw;
+    width: 17vw;
 }
 
 #links-uteis:hover, #redes-sociais:hover {
@@ -162,10 +162,9 @@ footer {
 }
 
 #links-uteis a:hover, #redes-sociais a:hover {
-    background: linear-gradient(90deg, rgba(3, 83, 189, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
 }
 
 #redes-sociais {
@@ -176,6 +175,11 @@ footer {
     transition: all 0.3s ease-in-out;
     padding: 15px;
     width: 12vw;
+}
+
+#redes-sociais a img {
+    width: 25px;
+    vertical-align: middle;
 }
 
 
