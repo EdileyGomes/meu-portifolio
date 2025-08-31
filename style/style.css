@@ -117,9 +117,10 @@ nav {
     font-family: "Inter", sans-serif;
     font-weight: 100;
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: 50px ;
     color: white;
 }
 
@@ -216,11 +217,44 @@ footer {
 }
 
 .container {
-  height: 500px;
+  height: auto;
   border-radius: 90px;
   color: black;
   background-color: white;
   padding: 70px;
+}
+
+#python, #javascript {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#javascript{
+  position: relative;
+  top: -160px;
+}
+
+#titulo-js {
+  position: relative;
+  top: -170px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  position: relative;
+  margin: 30px;
+  color: black;
+}
+
+.titulo-projetos {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  position: relative;
+  margin: 30px;
+  color: black;
 }
 
 .imagem-card {
@@ -242,4 +276,16 @@ footer {
   font-size: 20px;
   color: black;
   background-color: white;
+  opacity: 0;
+}
+
+#ver-mais {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin: 0px auto;
 }
