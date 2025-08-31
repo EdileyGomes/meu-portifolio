@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 body {
@@ -56,7 +55,7 @@ nav {
 
 /* Estilos do Menu Hambúrguer (invisível no desktop) */
 #menu-hamburguer {
-    display: flex; /* Escondido por padrão no desktop */
+    display: flex; 
     flex-direction: column;
     cursor: pointer;
     margin-left: 20px; /* Adiciona um espaço da direita */
@@ -76,6 +75,7 @@ nav {
     flex-direction: column;
     position: relative;
     top: 200px;
+    color: white;
 }
 
 #nome {
@@ -120,6 +120,7 @@ nav {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
+    color: white;
 }
 
 /* Parte do footer */
@@ -205,207 +206,40 @@ footer {
     font-size: 30px;
     font-family: 'Inter', sans-serif;
 }
-/*=============== VARIABLES CSS ===============*/
-:root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(82, 60%, 28%);
-  --title-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 0%);
-  --body-color: hsl(0, 0%, 95%);
-  --container-color: hsl(0, 0%, 100%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "inter", sans-serif;
-  --h2-font-size: 1.25rem;
-  --small-font-size: .813rem;
+#titulos-projetos{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    position: relative;
+    margin: 30px;
+    color: black;
 }
 
-/*========== Responsive typography ==========*/
-@media screen and (min-width: 1120px) {
-  :root {
-    --h2-font-size: 1.5rem;
-    --small-font-size: .875rem;
-  }
-}
-
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: var(--body-font);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/*=============== CARD ===============*/
 .container {
-  display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
-}
-
-.card-container {
-  display: grid;
-
-}
-
-.card-article {
-  position: relative;
-  overflow: hidden;
-}
-
-.card-img {
-  width: 328px;
-  border-radius: 1.5rem;
-}
-
-.card-data {
-  width: 280px;
-  background-color: var(--container-color);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-  border-radius: 1rem;
-  position: absolute;
-  bottom: -9rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
-  opacity: 0;
-  transition: opacity 1s 1s;
-}
-
-.card-description {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: .25rem;
+  height: 500px;
+  border-radius: 90px;
   color: black;
+  background-color: white;
+  padding: 70px;
 }
 
-.card-title {
-  font-size: var(--h2-font-size);
-  font-weight: 500;
-  color: var(--title-color);
-  margin-bottom: .75rem;
+.imagem-card {
+  width: 358px;
+  border-radius: 2rem;
 }
 
-.card-button {
-  text-decoration: none;
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  background: linear-gradient(90deg, rgba(3, 83, 189, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card-button:hover {
-  text-decoration: underline;
-}
-
-/* Naming animations in hover */
-.card-article:hover .card-data {
-  animation: show-data 1s forwards;
-  opacity: 1;
-  transition: opacity .3s;
-}
-
-.card-article:hover {
-  animation: remove-overflow 2s forwards;
-}
-
-.card-article:not(:hover) {
-  animation: show-overflow 2s forwards;
-}
-
-.card-article:not(:hover) .card-data {
-  animation: remove-data 1s forwards;
-}
-
-/* Card animation */
-@keyframes show-data {
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(-7rem);
-  }
-}
-
-@keyframes remove-overflow {
-  to {
-    overflow: initial;
-  }
-}
-
-@keyframes remove-data {
-  0% {
-    transform: translateY(-7rem);
-  }
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(.5rem);
-  }
-}
-
-@keyframes show-overflow {
-  0% {
-    overflow: initial;
-    pointer-events: none;
-  }
-  50% {
-    overflow: hidden;
-  }
-}
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 340px) {
-  .container {
-    margin-inline: 1rem;
-  }
-
-  .card__data {
-    width: 250px;
-    padding: 1rem;
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 768px) {
-  .card__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 1120px) {
-  .container {
-    height: 100vh;
-  }
-
-  .card-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .card-img {
-    width: 348px;
-    margin-right: 1.5rem;
-  }
-  .card-data {
-    width: 316px;
-    padding-inline: 2.5rem;
-  }
+.conteudo-card {
+  position: relative;
+  left: -20px;
+  width: 330px;
+  border-radius: 30px;
+  top: -70px;
+  left: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: black;
+  background-color: white;
 }
