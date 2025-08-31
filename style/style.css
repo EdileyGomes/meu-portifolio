@@ -133,8 +133,8 @@ footer {
     font-weight: 100;
     font-size: 18px;
     color: white;
-    height: 50vh;
-    margin-bottom: 50px;
+    height: auto;
+    margin: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -217,11 +217,13 @@ footer {
 }
 
 .container {
-  height: auto;
+  height: 900px;
   border-radius: 90px;
   color: black;
   background-color: white;
   padding: 70px;
+  text-align: center;
+  margin: 30px;
 }
 
 #python, #javascript {
@@ -244,7 +246,7 @@ footer {
   font-weight: 200;
   font-size: 40px;
   position: relative;
-  margin: 30px;
+  margin: 50px 0px 0px 30px;
   color: black;
 }
 
@@ -268,7 +270,7 @@ footer {
   width: 330px;
   border-radius: 30px;
   top: -70px;
-  left: 16px;
+  left: 22px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
   padding: 40px;
   font-family: "Inter", sans-serif;
@@ -288,4 +290,11 @@ footer {
   transition: all 0.3s ease-in-out;
   text-align: center;
   margin: 0px auto;
+  position: relative;
+  top: -230px;
+  background: linear-gradient(90deg, rgba(3, 83, 189, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.548);
 }
