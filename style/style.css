@@ -222,16 +222,16 @@ footer {
   color: black;
   background-color: white;
   padding: 70px;
-  text-align: center;
+  text-align: left;
   margin: 30px;
 }
 
 #python, #javascript {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px 40 px;
 }
 
 #javascript{
@@ -270,7 +270,7 @@ footer {
   width: 330px;
   border-radius: 30px;
   top: -70px;
-  left: 22px;
+  left: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
   padding: 40px;
   font-family: "Inter", sans-serif;

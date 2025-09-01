@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    
     $('.imagem-card').on({
         mouseenter: function (e) {
             $(this).siblings('.conteudo-card').css({
@@ -23,4 +25,29 @@ $(document).ready(function () {
             });
         }
     });
+
+
+
+    $(".conteudo-card").on({
+        mouseenter: function () {
+            $(this).css({
+                top:'-110px',
+                opacity:'1',
+                transition:'filter 0.5 ease-out',
+                filter:"brightness(100%)"
+            })
+            $(this).parent().css({
+                filter:"brightness(60%)",
+                transition: "filter 0.5 ease-out"
+            })
+        },
+        mouseleave: function () {
+            $(this).css({
+                opacity: "0",
+                top: "-70px",
+                transition: " opacity 0.5s ease-out, top 0.5s ease-out"
+            })
+        }
+    })
+
 });
