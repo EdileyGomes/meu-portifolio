@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    
+
     $('.imagem-card').on({
         mouseenter: function (e) {
             $(this).siblings('.conteudo-card').css({
@@ -35,10 +35,6 @@ $(document).ready(function () {
                 opacity:'1',
                 transition:'filter 0.5 ease-out',
                 filter:"brightness(100%)"
-            })
-            $(this).parent().css({
-                filter:"brightness(60%)",
-                transition: "filter 0.5 ease-out"
             })
         },
         mouseleave: function () {
