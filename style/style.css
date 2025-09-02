@@ -359,3 +359,43 @@ footer {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+li {
+    list-style: none;
+
+}
+
+.container-tecnologias {
+    background-color: white;
+    width: 96vw;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+.logos {
+    max-width: 1080px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.logos ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: 20s infinite slide linear;
+}
+
+.logos img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50px;
+    filter: grayscale(100%);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-1140px);
+    }
+}
