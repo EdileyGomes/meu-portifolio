@@ -367,6 +367,7 @@ li {
 }
 
 .container-tecnologias {
+    background-color: white;
     max-width: 1690px;
     border-radius: 60px;
     padding: 2rem;
@@ -393,7 +394,6 @@ li {
 .logos img {
     width: 8rem;
     transition: transform 0.3s ease-in-out;
-    filter: );
 }
 
 @keyframes slide {
