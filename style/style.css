@@ -54,21 +54,6 @@ nav {
     font-weight: 300;
 }
 
-/* Estilos do Menu Hambúrguer (invisível no desktop) */
-#menu-hamburguer {
-    display: flex; 
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 20px; /* Adiciona um espaço da direita */
-}
-
-.barrinhas {
-    width: 45px;
-    height: 4px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.589);
-    margin: 3px;
-}
 
 /* Estilos da Seção Principal */
 #nomes {
