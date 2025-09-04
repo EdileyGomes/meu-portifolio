@@ -129,7 +129,7 @@ nav {
 footer {
     background-color: white ;
     text-align: center;
-    padding: 60px;
+    padding: 40px;
     border-radius: 50px;
     font-weight: 100;
     font-size: 18px;
@@ -150,17 +150,20 @@ footer {
     width: 17vw;
 }
 
-#links-uteis:hover, #redes-sociais:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.253);
+.textos-footer {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
 }
 
 #links-uteis a {
     text-decoration: none;
     color: black;
     margin: 10px 0;
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Inter', sans-serif;
 }
 
@@ -190,7 +193,7 @@ footer {
     text-decoration: none;
     color: black;
     margin: 10px 0;
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Inter', sans-serif;
 }
 
