@@ -12,11 +12,12 @@
 
 body {
     background-color: black;
-    max-width: 1800px;
+    min-width: auto;
     margin: auto;
     overflow-x: hidden;
-    padding:30px;
+    padding:20px;
 }
+
 
 /* Estilos do Cabeçalho e Navegação */
 header {
@@ -138,10 +139,10 @@ footer {
 .textos-footer {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 0.3rem;
 }
 
 #links-uteis a {
@@ -309,8 +310,7 @@ footer {
 
 #container-sobre-mim {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 .spans-sobre-mim:hover {
@@ -390,4 +390,8 @@ li {
     } to {
         transform: translateX(-1140px);
     }
+}
+
+@media screen {
+
 }
