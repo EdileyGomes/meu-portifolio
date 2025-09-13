@@ -384,6 +384,84 @@ li {
     transition: transform 0.3s ease-in-out;
 }
 
+.time-line {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+
+}
+
+.container-time-line {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container-time-line img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.right-container img {
+    left:-20px;
+}
+
+.time-line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.text-box small {
+    font-family: "inter", sans-serif;
+    font-weight: 800;
+}
+
+.text-box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+
 @keyframes slide {
     from {
         transform: translateX(0);
